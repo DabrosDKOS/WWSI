@@ -9,8 +9,8 @@ public class Knight extends Person {
     private String mount;
     double strength=1.0;
     public Knight(String name,char gender,String fatherName,
-                String motherName,String weapon,String mount){
-        super(name,gender,fatherName,motherName);
+                String motherName,String weapon,String mount,String dateOfBirth){
+        super(name,gender,fatherName,motherName,dateOfBirth);
         this.weapon=weapon;
 	this.mount=mount;     
         role = "Knight";

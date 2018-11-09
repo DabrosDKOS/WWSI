@@ -11,8 +11,8 @@ public class Gardener extends Person{
     private int numberOfPlantedTrees=0;
     Random randomGenerator;
 
-    public Gardener(String name,char gender,String fatherName,String motherName){
-        super(name,gender,fatherName,motherName);
+    public Gardener(String name,char gender,String fatherName,String motherName, String dateOfBirth){
+        super(name,gender,fatherName,motherName,dateOfBirth);
         randomGenerator = new Random(); 
         role = "Gardener";
     }

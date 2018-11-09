@@ -15,14 +15,16 @@ public class Person {
     protected String fatherName;
     protected String motherName;
     protected String role = "";
-    public Person(String name,char gender,String fatherName,String motherName){
+    protected String dateOfBirth = "";
+    public Person(String name,char gender,String fatherName,String motherName, String dateOfBirth){
         this.name=name;
         this.gender=gender;
         this.fatherName=fatherName;
         this.motherName=motherName;
+        this.dateOfBirth=dateOfBirth;
     }
     public String describe(){
-        return (name+", "+(gender=='m'?"son":"daughter")+
+        return (name+", " + dateOfBirth + " years " +(gender=='m'?"son":"daughter")+
                     " of "+fatherName+" and "+motherName+".");
     }
     public String getRole(){
