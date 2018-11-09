@@ -16,19 +16,21 @@ public class Gardener {
     private char gender;
     private String fatherName;
     private String motherName;
+    private String dateOfBirth;
     private int numberOfPlantedTrees=0;
     Random randomGenerator;
     private static final double NICE_WEATHER_PROBABILITY = 0.75; 
     
-    public Gardener(String name,char gender,String fatherName,String motherName){
+    public Gardener(String name,char gender,String fatherName,String motherName, String dateOfBirth){
         this.name=name;
         this.gender=gender;
         this.fatherName=fatherName;
         this.motherName=motherName;
+        this.dateOfBirth=motherName;
         randomGenerator = new Random(); 
     }
     public String describe(){
-        return (name+", "+(gender=='m'?"son":"daughter")+
+        return (name+", " + dateOfBirth + " years " +(gender=='m'?"son":"daughter")+
                     " of "+fatherName+" and "+motherName + 
                 ". Works as Gardener. Planted "+numberOfPlantedTrees+" trees"+".");
     }

@@ -16,9 +16,10 @@ public class Knight {
     private String motherName;
     private String weapon;  
     private String mount;
+    private String dateOfBirth;
     double strength=1.0;
     public Knight(String name,char gender,String fatherName,String motherName,
-            String weapon, String mount){
+            String weapon, String mount, String dateOfBirth){
         this.name=name;
         this.gender=gender;
         this.fatherName=fatherName;
@@ -26,9 +27,10 @@ public class Knight {
         this.weapon=weapon;
 	this.mount=mount;     
         this.weapon=weapon;
+        this.dateOfBirth=motherName;
     }       
     public String describe(){
-        return name+", "+(gender=='m'?"son":"daughter")+
+        return name+", "+ dateOfBirth + " years " +(gender=='m'?"son":"daughter")+
                     " of "+fatherName+" and "+motherName+
                 ". Works as Knight. Fights with a "+weapon+
                 ", rides on a "+mount+". "+(strength>0?"Can fight":"Needs a rest")+".";
