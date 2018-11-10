@@ -1,0 +1,22 @@
+<data>
+  <persons>
+    <person>
+        <id>1</id>
+        <name>Marcin Dąbrowski</name>
+        <years>24</years>
+        <description></description>
+    </person>
+     <person>
+        <id>2</id>
+        <name>Jan Kowalski</name>
+        <years>25</years>
+        <description></description>
+    </person>
+     <person>
+        <id>3</id>
+        <name>Janko Nowak</name>
+        <years>35</years>
+        <description></description>
+    </person>
+  </persons>
+</data>
